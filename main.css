@@ -4,22 +4,10 @@
     background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 15%, transparent),
     url("images/freedom.jpg") top 40% left 0%/cover no-repeat border-box,
     red;
-    /* background-size: cover;
-    background-position: top 40% left 0%; */
-    /* background-repeat: no-repeat;
-    background-origin: border-box;
-    background-clip: border-box; */
-    /* background-image: radial-gradient(circle at top center, red, green, yellow); */
     width: 100%;
-    height: 70vh;
+    height: 40vh;
     padding: 0.625rem;
-    margin-top: 2.688rem;
     position: relative;
-}
-
-.section-title {
-    color: #2ddf5c;
-    text-align: center;
 }
 
 #product-overview h1 {
@@ -30,26 +18,41 @@
     left: 3%;
 }
 
-.plan__list {
-    width: 80%;
-    margin: auto;
+@media (min-width: 40rem) {
+    #product-overview {
+        height: 70vh;
+    }
+
+    #product-overview h1 {
+        font-size: 2.5rem;
+    }
+}
+
+.section-title {
+    color: #2ddf5c;
     text-align: center;
 }
+
+/* .plan__list {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+} */
 
 .plan {
     background: #d5ffdc;
     text-align: center;
     padding: 1rem;
-    margin: 0.5rem;
-    display: inline-block;
-    width: 30%;
+    margin: 0.5rem 0;
+    /* display: inline-block; */
+    width: 100%;
     vertical-align: middle;
 }
 
 .plan--highlighted {
     background: #19b84c;
     color: white;
-    box-shadow: 0.125rem 0.125rem 0.125rem 0.125rem rgba(0, 0, 0, 0.5);
+    /* box-shadow: 0.125rem 0.125rem 0.125rem 0.125rem rgba(0, 0, 0, 0.5); */
 }
 
 .plan__annotation {
@@ -86,6 +89,26 @@
     margin: 0.5rem 0;
 }
 
+@media (min-width: 40rem) {
+    .plan__list {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .plan {
+        display: inline-block;
+        /* margin: 0.1rem; */
+        width: 30%;
+        min-width: 12.8rem;
+        max-width: 25rem;
+    }
+
+    .plan--highlighted {
+        box-shadow: 0.125rem 0.125rem 0.125rem 0.125rem rgba(0, 0, 0, 0.5);
+    }
+}
+
 #key-features {
     background: #ff1b68;
     margin-top: 5rem;
@@ -105,8 +128,8 @@
 }
 
 .key-feature {
-    display: inline-block;
-    width: 30%;
+    /* display: inline-block; */
+    /* margin: auto; */
     vertical-align: top;
 }
 
@@ -127,6 +150,13 @@
     font-size: 20px;
 }
 
+@media (min-width: 40rem) {
+    .key-feature {
+        display: inline-block;
+        max-width: 25rem;
+        width: 30%;
+    }
+}
 .modal {
     position: fixed;
     display: none;
