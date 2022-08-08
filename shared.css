@@ -191,6 +191,14 @@ main {
     outline: none;
 }
 
+.button[disabled] {
+    cursor: not-allowed;
+    color: #858484;
+    border-color: #858484;
+    background: #ccc;
+    
+}
+
 .mobile-nav {
     display: none;
     position: fixed;
